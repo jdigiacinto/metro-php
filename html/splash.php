@@ -6,13 +6,18 @@
 <html>
         <head>
                 <link rel="stylesheet" href="style.css">
+				<meta http-equiv="Content-Security-Policy" 
+                content="script-src 'self';font-src fonts.gstatic.com;
+                style-src 'self' fonts.googleapis.com;img-src 'self';connect-src 'self';
+                frame-src 'self'; media-src 'self;object-src 'self';manifest-src 'self';
+                prefetch-src 'self';form-action 'self'">
         </head>
         <body>
 
 	<h1>M E T R O</h1>
 
 	<?php 
-		// print_r($_SESSION);  USEFUL FOR DEBUGGING
+		//print_r($_SESSION);  //USEFUL FOR DEBUGGING
 
 		if($_SESSION["authenticated"])
 		{
